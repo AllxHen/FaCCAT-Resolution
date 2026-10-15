@@ -8,9 +8,10 @@ namespace EX01
         {
             int A = 10;
             int B = 20;
-            Console.WriteLine(B);
-            B = 5;
-            Console.WriteLine($"A:{A} . B:{B}");
+            Console.WriteLine($"A:{A}, B:{B} ");
+            B = 10;
+            A = 20;
+            Console.WriteLine($"A:{A}, B:{B}");
         }
     }
 }
