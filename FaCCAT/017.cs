@@ -6,22 +6,22 @@ namespace Ex00
     {
         static void Main(string[] args)
         {
-            int n1 = 10;
-            int n2 = 20;
-            Console.Write($"Numero 1: {n1}, Numero 2: {n2}");
-            Console.ReadLine();
             Console.Write("Digite o primeiro numero: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
             Console.Write("Digite o segundo numero: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
-            if (numero1 != 10 && numero2 != 20)
+            if (n1 == n2)
             {
-                Console.WriteLine($"Numero validos: A:{numero1}, B:{numero2}");
+                Console.Write("Numero Invalido! (Numero repetido)");
             }
-            else
+            else if (n1 > n2)
             {
-                Console.WriteLine("Numero invalido (Igual ao numero existente)");
+                Console.Write(n1);
+            }
+            else if (n2 > n1)
+            {
+                Console.Write(n2);
             }
         }
     }
